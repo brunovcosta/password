@@ -11,8 +11,8 @@ alphabet = '{}()[]#:;^,.?!|&_`~@$%/\\=+-*"\' '+
 'ABCDEFHGIJKLMNOPQRSTUVWXYZ'+
 '0123456789'
 
-print "\n\npassword: "
-key.chars.each.with_index do |char,index|
+puts "password: "
+key.chars.map.with_index do |char,index|
 	new_index = (alphabet.index service[index % service.size]) + (alphabet.index char)
 	print alphabet[new_index % alphabet.size]
 end
